@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            /* background-color: #333; */
+            color: black;
+            text-align: center;
+            /* padding: 20px; */
+            /* height: 150px; */
+        }
+       
+
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+        nav ul li {
+            cursor: pointer;
+            padding: 10px;
+            flex: auto;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        /* nav ul li:hover
+        {
+            color: black;
+        } */
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            width: 30%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 10px 1px black;
+        }
+
+
+        .slider-container {
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+        }
+
+        .slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            /* -webkit-overflow-scrolling: touch; For smooth scrolling on iOS */
+            scroll-behavior: smooth;
+            /* For smooth scrolling on modern browsers */
+            justify-content: center;
+        }
+
+        .slide {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            width: 300px;
+            /* Adjust width as needed */
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin: 10px;
+            /* Adjust margin as needed */
+            border-radius: 5px;
+        }
+
+        .slide:hover
+        {
+            width: 305px;
+            border-radius: 0px;
+        }
+
+        .slider-container > h2
+        {
+            text-align: center;
+        }
+
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+           <h1>COMPUTER INSTITUTE</h1>
+            <!-- <h3>THE COMPLETE SOLUTION IN COMPUTER EDUCATION</h3> -->
+        </header>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="D:\Web_Development\excel-computers\about.html">About us</a></li>
+                <li><a href="D:\Web_Development\excel-computers\courses.html">Courses</a></li>
+                <li><a href="D:\Web_Development\excel-computers\contact.html">Contact us</a></li>
+            </ul>
+            <!-- Your navigation links here -->
+        </nav>
+
+        <div class="content">
+            <div class="card">
+                <h2>Who are we</h2>
+                <p>This is the content of card 1.</p>
+            </div>
+            <div class="card">
+                <h2>What we do</h2>
+                <p>This is the content of card 2.</p>
+            </div>
+            <div class="card">
+                <h2>Reviews</h2>
+                <p>This is the content of card 3.</p>
+            </div>
+        </div>
+
+
+        <div class="slider-container">
+            <h2>"What our students have to say about us"</h2>
+            <div class="slider">
+                <!-- Google reviews will go here as slides -->
+                <div class="slide">
+                    <p>Review 1: Amazing service and great prices!</p>
+                    <p>- John Doe</p>
+                </div>
+                <div class="slide">
+                    <p>Review 2: Very satisfied with their work. Highly recommend!</p>
+                    <p>- Jane Smith</p>
+                </div>
+                <div class="slide">
+                    <p>Review 3: Excellent customer service. Will definitely come back!</p>
+                    <p>- David Johnson</p>
+                </div>
+                <!-- Add more reviews as needed -->
+                <div class="slide">
+                    <p>Review 4: Amazing service and great prices!</p>
+                    <p>- John Doe</p>
+                </div>
+              
+            </div>
+        </div>
+
+
+        <footer>
+            <p>Address: 123 Main St, City, Country</p>
+            <p>Phone: +1234567890</p>
+            <p>Rights reserved &copy; 2024 | Made by Your Name</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
